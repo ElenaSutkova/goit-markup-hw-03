@@ -77,7 +77,7 @@ ol {
 */
 
 .header {
-    padding: 24px 0;
+    
     border-bottom: 1px solid var(--cornflower, #E7E9FC);
 }
 
@@ -85,12 +85,13 @@ ol {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+    padding: 24px 0;
 }
 
 
 .header-nav {
     display: flex;
+    align-items: center;
 }
 
 .link {
@@ -212,7 +213,7 @@ text-decoration: none;
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--main-white-cl);
-    width: 496px;
+    max-width: 496px;
     height: 120px;
     margin: 0 auto;
     margin-bottom: 48px;
@@ -231,7 +232,7 @@ text-decoration: none;
     padding: 16px 32px;
     border: none;
     border-radius: 4px;
-
+    min-width: 169px;
 }
 
 .herro-button:hover,
@@ -251,16 +252,25 @@ text-decoration: none;
 */
 
 .benefits {
-    padding-bottom: 60px;
+    padding: 120px 0;
+
 }
 
 .benefits-title {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.02em;
-    color: var(--main-dark-cl);
-    display: none;
+    
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;        
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .benefits-list {
@@ -268,11 +278,11 @@ list-style-type: none;
 display: flex;
 justify-content: space-between;
 margin: 0 auto;
+gap: 24px;
 }
 
 .benefits-item {
     width: 264px;
-
 }
 
 
@@ -282,6 +292,7 @@ margin: 0 auto;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--main-dark-cl);
+    margin-bottom: 8px;
 }
 
 .benefits-description {
@@ -304,8 +315,7 @@ margin: 0 auto;
 */
 
 .work {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 120px;
 }
 
 .work-title {
@@ -316,7 +326,7 @@ margin: 0 auto;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--main-dark-cl);
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .work-list {
@@ -344,7 +354,7 @@ margin: 0 auto;
 
 .team {
     background: var(--main-light-cl);
-    padding-top: 60px;
+    padding-top: 120px;
     padding-bottom: 120px;
 }
 
@@ -356,7 +366,7 @@ margin: 0 auto;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: var(--main-dark-cl);
-    padding-bottom: 72px;
+    margin-bottom: 72px;
 }
 
 .list {
@@ -366,6 +376,7 @@ margin: 0 auto;
     list-style-type: none; 
     display: flex;
     gap: 24px;
+    border-radius: 0px 0px 4px 4px;
 }
 
 .team-item {
@@ -426,6 +437,8 @@ margin: 0 auto;
     text-decoration: none;
     color: var(--main-brand-cl);
     padding-top: 100px;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 
@@ -438,7 +451,7 @@ margin: 0 auto;
     color: var(--main-light-cl);
     width: 264px;
     height: 72px;
-    margin-top: 16px;
+    
 }
 
 
@@ -451,7 +464,10 @@ margin: 0 auto;
 */
 
 
-.navigation {}
+.navigation {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
 
 
 
@@ -462,16 +478,14 @@ margin: 0 auto;
   |============================
 */
 
-.portfolio-title {
-    display: none;
-}
+
 
 .navigation-list {
     display: flex;
     gap: 24px;
     align-items: flex-start;
     padding-top: 96px;
-    padding-bottom: 72px;
+    margin-bottom: 72px;
     justify-content: center;
     
     
@@ -482,7 +496,10 @@ margin: 0 auto;
     background-color: var(--main-interaction-cl);
     color: var(--main-white-cl);
     cursor: pointer;
+    border: 1px solid transparent
 }
+
+
 .navigation-item {
 
 }
@@ -501,7 +518,7 @@ margin: 0 auto;
     border-radius: 4px;
     border: none;
     padding: 12px 24px;
-    
+    border: 1px solid var(--main-cornflower)
 
 }
 
@@ -520,6 +537,7 @@ margin: 0 auto;
     gap: 24px;
     align-items: flex-start;
     flex-wrap: wrap;
+    row-gap: 48px;
 }
 
 .img-item {   
@@ -532,8 +550,13 @@ margin: 0 auto;
     border-top: none;
 }
 
-.img-navigation {
+
+.img {
     display: block;
+}
+
+
+.img-navigation {
     
 }
 
@@ -543,7 +566,7 @@ margin: 0 auto;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--main-dark-cl);
-    padding-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .img-description {
