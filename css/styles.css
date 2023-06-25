@@ -84,7 +84,6 @@ ol {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 24px 0;
 }
 
 
@@ -107,6 +106,7 @@ text-decoration: none;
     text-transform: uppercase;
     color: var(--main-brand-cl);
     margin-right: 76px;
+    padding: 24px 0;
     
 }
 
@@ -139,6 +139,7 @@ text-decoration: none;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--main-dark-cl);
+    padding: 24px 0;
 }
 
 .header-link:hover,
